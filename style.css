@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  align-items: center;
+  position: fixed; /* Make the navigation bar fixed */
+  top: 0; /* Position it at the top of the viewport */
+  width: 100%; /* Make it take up the full width of the viewport */
+  background-color: #000000; /* Optionally, you can set the background color */
+  z-index: 1000; /* Set a high z-index to ensure it appears above other content */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+ul li a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent element */
+}
+
+.green {
+  color: #00ffa7;
+}
+
+.seprator {
+  width: 100vw;
+  border: 1px solid #1f1f1f;
+}
+
+header h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 120px;
+  margin-top: 80px;
+}
+
+.linear-gradient {
+  background: linear-gradient(90deg, #ffff00, #00ffa7);
+  color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.haeder-content {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+button {
+  border-radius: 50px;
+  background-color: #fff;
+  color: #121212;
+  border: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  align-items: baseline;
+  width: 175px;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  width: 197px;
+  transition: ease-in 0.3s;
+  border: 2px solid white;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+section {
+  width: 98.7vw;
+  height: 950px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading-conatiner {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading-conatiner div img {
+  width: 50px;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.black {
+  filter: invert(10%) sepia(10%) saturate(0%) hue-rotate(10deg) brightness(20%)
+    contrast(0%);
+}
+
+.heading-conatiner div h2 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.heading-conatiner p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.card-header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  padding: 10px;
+}
+
+.card1,
+.card5 {
+  width: 250px;
+  height: 345px;
+  border: 3px solid black;
+  background-color: #adffd1;
+  border-radius: 20px;
+}
+
+.card5 {
+  background-color: #dfffed;
+}
+.card2,
+.card6 {
+  width: 250px;
+  height: 345px;
+  border: 3px solid black;
+  background-color: #d9fdff;
+  border-radius: 20px;
+}
+.card3,
+.card7 {
+  width: 250px;
+  height: 345px;
+  border: 3px solid black;
+  background-color: #ffe6e6;
+  border-radius: 20px;
+}
+.card4,
+.card8 {
+  width: 250px;
+  height: 345px;
+  border: 3px solid black;
+  background-color: #dfe3fb;
+  border-radius: 20px;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover,
+.card5:hover,
+.card6:hover,
+.card7:hover,
+.card8:hover {
+  width: 265px;
+  height: 355px;
+  transition: ease-in 0.3s;
+  border-radius: 30px;
+  box-shadow: 5px 0 20px rgba(0, 0, 0, 0.3); /* Add a shadow on the right side on hover */
+  position: relative;
+}
+
+.card1:hover::after,
+.card2:hover::after,
+.card3:hover::after,
+.card4:hover::after,
+.card5:hover::after,
+.card6:hover::after,
+.card7:hover::after,
+.card8:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.203),
+    rgba(0, 0, 0, 0)
+  ); /* Fading effect */
+}
+
+.seprator2 {
+  border: 2px solid black;
+  width: 100%;
+}
+
+.card1 h3,
+.card2 h3,
+.card3 h3,
+.card4 h3,
+.card5 h3,
+.card6 h3,
+.card7 h3,
+.card8 h3 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 23px;
+  align-items: center;
+  text-align: center;
+}
+
+.card1 p,
+.card2 p,
+.card3 p,
+.card4 p,
+.card5 p,
+.card6 p,
+.card7 p,
+.card8 p {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-align: start;
+}
+
+.card-img img {
+  width: 100%;
+  object-fit: contain;
+  aspect-ratio: 1.7/1;
+}
+
+.button2 {
+  border-radius: 50px;
+  background-color: #fff;
+  color: #121212;
+  border: 3px solid black;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  align-items: baseline;
+  width: 121px;
+  height: 42px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.button-container2 {
+  display: flex;
+  justify-content: end;
+  padding: 10px 20px;
+  margin-top: 3.5px;
+}
+
+.button2:hover {
+  background-color: black;
+  color: white;
+  width: 130px;
+  transition: ease-in 0.3s;
+}
+
+.article-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Poppins", sans-serif;
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  text-align: center; /* Horizontally center the content */
+  height: 25vh;
+  margin-top: 50px;
+}
+
+footer img {
+  display: inline-block; /* Set the image to be inline-block */
+}
+
+.seprator3 {
+  border: 1px solid #5e5e5e;
+  width: 70vw;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+.footer-content {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #98a6ac;
+  font-size: 14px;
+  position: relative;
+  top: 40px;
+}
+
+.hamburger {
+  display: none;
+  filter: invert(1);
+}
+
+@media (max-width: 790px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  nav ul {
+    display: block; /* Change to block layout */
+    padding: 0; /* Remove default padding */
+  }
+
+  nav ul li {
+    display: none;
+    margin-bottom: 10px; /* Add margin between list items */
+  }
+
+  #navbar.expanded ul li {
+    display: block; /* Show the menu items when the hamburger menu is expanded */
+  }
+
+  #navbar {
+    overflow: hidden;
+    transition: height 0.3s ease; /* Smooth transition for height change */
+    height: 100px; /* Initially hide the navbar */
+  }
+
+  #navbar.expanded {
+    height: auto; /* Expand the navbar when expanded */
+  }
+
+  header {
+    margin-top: 50px; /* Shift main content down */
+    transition: margin-top 0.3s ease; /* Smooth transition for margin change */
+  }
+
+  /* Adjust content positioning when navbar is expanded */
+  #navbar.expanded + header {
+    margin-top: 200px; /* Shift main content further down when navbar is expanded */
+  }
+
+  header h1 {
+    font-size: 50px;
+    margin-top: 100px;
+  }
+
+  .haeder-content {
+    width: 100%;
+    font-size: 10px;
+  }
+
+  button {
+    width: 125px;
+    height: 35px;
+    margin-top: 5px;
+    font-size: 13px;
+  }
+
+  button:hover {
+    width: 157px;
+  }
+
+  .heading-conatiner div img {
+    width: 40px;
+  }
+
+  .heading-conatiner p {
+    font-size: 12px;
+  }
+
+  .card-header {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .card1,
+  .card5 {
+    width: 250px;
+    height: 350px;
+  }
+  .card5 {
+    background-color: #dfffed;
+  }
+  .card2,
+  .card6 {
+    width: 250px;
+    height: 350px;
+  }
+  .card3,
+  .card7 {
+    width: 250px;
+    height: 350px;
+  }
+  .card4,
+  .card8 {
+    width: 250px;
+    height: 350px;
+  }
+  .article-container {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  footer img {
+    width: 100px;
+  }
+
+  .footer-content {
+    font-size: 10px;
+    top: 30px;
+  }
+}
